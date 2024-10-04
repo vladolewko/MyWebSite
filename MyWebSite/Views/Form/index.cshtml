@@ -1,0 +1,52 @@
+@model FormModel
+@*
+
+*@
+@{
+    ViewData["Title"] = "Form ";
+}
+<div class="wrapper">
+<h1 class="FormTitle">Залишити заявку</h1>
+<form method="POST" asp-controller="Form" asp-action="Check">
+    <div class="form">
+        <div class="FormField">
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+            <span asp-validation-for="Name"></span>
+            <br>
+        </div>
+
+        <div class="FormField">
+            <label asp-for="Surname"></label>
+            <input asp-for="Surname">
+            <span asp-validation-for="Surname"></span>
+            <br>
+        </div>
+
+        <div class="FormField">
+            <label asp-for="Age"></label>
+            <input asp-for="Age">
+            <span asp-validation-for="Age"></span>
+            <br>
+        </div>
+
+        <div class="FormField">
+            <label asp-for="Email"></label>
+            <input asp-for="Email">
+            <span asp-validation-for="Email"></span>
+            <br>
+        </div>
+
+        <div class="FormField">
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone">
+            <span asp-validation-for="Phone"></span>
+            <br>
+        </div>
+
+        <div class="FormField">
+            <input type="submit" value="Підтвердити">
+        </div>
+    </div>
+</form>
+</div>

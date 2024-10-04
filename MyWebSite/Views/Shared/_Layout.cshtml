@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - MyWebSite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/MyWebSite.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="wrapper">
+            <div class="nav">
+                <div class="logotipe">
+                    <a class="logo" asp-area="" asp-controller="Home" asp-action="Index"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 23l-8.5-4.535v-3.953l5.4 3.122 3.1-3.406v8.772zm1-.001v-8.806l3.162 3.343 5.338-2.958v3.887l-8.5 4.534zm-10.339-10.125l-2.161-1.244 3-3.302-3-2.823 8.718-4.505 3.215 2.385 3.325-2.385 8.742 4.561-2.995 2.771 2.995 3.443-2.242 1.241v-.001l-5.903 3.27-3.348-3.541 7.416-3.962-7.922-4.372-7.923 4.372 7.422 3.937v.024l-3.297 3.622-5.203-3.008-.16-.092-.679-.393v.002z"/></svg>MyWebSite</a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" asp-area="" asp-controller="Form" asp-action="Index">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" asp-area="" asp-controller="User" asp-action="Index">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
+                        <ul class="sub-menu">
+                            <li><a asp-controller="Product" asp-action="Edit">Edit</a></li>
+                            <li><a asp-controller="Product" asp-action="Create">Create</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+        @* <div class="wrapper"> *@
+        @*     <div class="main-paragraph"> *@
+        @*         <div class="info"> *@
+        @*             <h3> *@
+        @*                 Lorem ipsum dolor sit. *@
+        @*             </h3> *@
+        @*             <p> *@
+        @*                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ea eaque esse, explicabo harum incidunt ipsa iste maiores molestiae mollitia neque quos repudiandae, tempora ut voluptatem? Alias autem consequuntur doloribus error ipsam laborum minima nam nobis, officia omnis, possimus sint sit soluta ullam vitae voluptas?.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis cupiditate deleniti doloribus et expedita, facere fuga fugiat itaque libero nihil nulla obcaecati quo tempore velit? Accusantium aperiam eaque, harum officia praesentium similique voluptate? Deserunt distinctio esse eveniet illo nesciunt odit quae. Iste quas, sed? *@
+        @*             </p> *@
+        @*             <div class="agitation"> *@
+        @*                 <p>Don't Miss Your Chance!</p> *@
+        @*             </div> *@
+        @*         </div> *@
+        @*         <div class="img"> *@
+        @*             <img src="lib/img/par-img.jpg" alt="par img"> *@
+        @*         </div> *@
+        @*     </div> *@
+        @* </div> *@
+    </main>
+</div>
+
+<footer class="footer text-muted">
+    <div class="wrapper">
+        <p>&copy;footer cooperate</p>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

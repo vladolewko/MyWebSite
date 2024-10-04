@@ -1,0 +1,41 @@
+@model IEnumerable<ProductModel>
+
+<div class="wrapper">
+    <div class="tableForProducts">
+        <table class="productstable">
+            <tr class="thead">
+                <td>Id</td>
+                <td>Name</td>
+                <td>Short description</td>
+                <td>Demention</td>
+                <td>Weight</td>
+                <td>isFavorite</td>
+                <td>Price</td>
+                <td>Delete</td>
+            </tr>
+            @foreach (var product in Model)
+            {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.ProductName</td>
+                <td>@product.ShortDesc</td>
+                <td>@product.Demention</td>
+                <td>@product.Weight</td>
+                <td>@product.IsFavorite</td>
+                <td>@product.Price</td>
+                <td class="deleteProduct">
+                    <form asp-action="Delete" method="post">
+                        <label for="delete">delete</label>
+                        <input type="hidden" name="id" value="@product.Id"/>
+                        <button type="submit" id="delete" class="btn btn-danger"></button>
+                    </form>
+                </td>
+            </tr>
+            }
+            <tr>
+                <td></td>
+                <td class="linkForCreate" colspan="7"><a asp-controller="Product" asp-action="Create">Create</a></td>
+            </tr>
+        </table>
+    </div>
+</div>

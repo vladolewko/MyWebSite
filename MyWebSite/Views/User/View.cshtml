@@ -1,0 +1,30 @@
+@model IEnumerable<MyWebSite.Models.UserModel>
+
+<h2>User List</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Username</td>
+            <td>@user.Email</td>
+            <td>
+                <a href="@Url.Action("Edit", "User", new { id = user.Id })">Edit</a> |
+                <a href="@Url.Action("Delete", "User", new { id = user.Id })">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "User")" class="btn btn-primary">Create New User</a>

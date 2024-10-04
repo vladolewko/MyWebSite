@@ -1,0 +1,30 @@
+@model MyWebSite.Models.UserModel
+
+<h2>Create User</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Username"></label>
+        <input asp-for="Username" />
+        <span asp-validation-for="Username"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="IsAdmin"></label>
+        <input asp-for="IsAdmin" type="checkbox" />
+    </div>
+    <button type="submit">Create</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

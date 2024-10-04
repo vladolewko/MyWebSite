@@ -1,0 +1,43 @@
+@model IEnumerable<ProductModel>
+
+<div class="wrapper">
+    <h2 class="titleh2">Favorite Products</h2>
+    <div class="products favorite">
+        @foreach (var product in Model)
+        {
+            if (product.IsFavorite == true) // Access the IsFavorite property from the product object
+            {
+                <figure>
+                    <img src="@product.Image" alt="product card">
+                    <div class="figure-card">
+                        <h2>@product.ProductName</h2>
+                        <p>@product.ShortDesc</p>
+                            <p>Dimension: @product.Demention</p>
+                            <p>Weight: @product.Weight</p>
+                            <p class="cost">Cost: @product.Price$</p> <!-- Dynamically display price -->
+                        <a class="link" href="/">Go to Product</a>
+                    </div>
+                </figure>
+            }
+        }
+    </div>
+
+    <h2 class="titleh2">All Products</h2>
+    <div class="products all">
+        @foreach (var product in Model)
+        {
+        <figure>
+            <img src="@product.Image" alt="product card">
+            <div class="figure-card">
+                <h2>@product.ProductName</h2>
+                <p>@product.ShortDesc</p>
+                    <p>Dimension: @product.Demention</p>
+                    <p>Weight: @product.Weight</p>
+                <p class="cost">Cost: @product.Price$</p>
+                <a class="link" href="/">Go to Product</a>
+            </div>
+        </figure>
+        }
+    </div>
+</div>
+
