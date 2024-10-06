@@ -7,17 +7,20 @@
         {
             if (product.IsFavorite == true) // Access the IsFavorite property from the product object
             {
-                <figure>
-                    <img src="@product.Image" alt="product card">
-                    <div class="figure-card">
-                        <h2>@product.ProductName</h2>
-                        <p>@product.ShortDesc</p>
+                @* <a href="@Url.Action("Details", "Product", new { id = product.Id })"> *@
+                    <figure>
+                        <img src="@product.Image" alt="product card">
+                        <div class="figure-card">
+                            <h2>@product.ProductName</h2>
+                            <p>@product.ShortDesc</p>
+                            <p class="dnone">@product.FullDesc</p>
                             <p>Dimension: @product.Demention</p>
                             <p>Weight: @product.Weight</p>
                             <p class="cost">Cost: @product.Price$</p> <!-- Dynamically display price -->
-                        <a class="link" href="/">Go to Product</a>
-                    </div>
-                </figure>
+                            <a class="link" href="@Url.Action("Details", "Product", new { id = product.Id })">Go to Product</a>
+                        </div>
+                    </figure>
+                // </a>
             }
         }
     </div>
@@ -31,10 +34,11 @@
             <div class="figure-card">
                 <h2>@product.ProductName</h2>
                 <p>@product.ShortDesc</p>
+                <p class="dnone">@product.FullDesc</p>
                     <p>Dimension: @product.Demention</p>
                     <p>Weight: @product.Weight</p>
                 <p class="cost">Cost: @product.Price$</p>
-                <a class="link" href="/">Go to Product</a>
+                <a class="link" href="@Url.Action("Details", "Product", new { id = product.Id })">Go to Product</a>
             </div>
         </figure>
         }

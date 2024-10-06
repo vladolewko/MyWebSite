@@ -1,0 +1,21 @@
+@model MyWebSite.Models.ProductModel
+
+<div class="wrapper">
+    <h2 class="productDetails">Product Details</h2>
+    
+
+    <div class="product details">
+        <figure>
+            <img src="~/lib/img/ProductImg/@(Model.ProductName).jpg" alt="@Model.ProductName"/>
+            <div class="details-card">
+                <h2>@Model.ProductName</h2>
+                <p>@Model.FullDesc</p>
+                <p>Dimension: @Model.Demention</p>
+                <p>Weight: @Model.Weight</p>
+                <p class="cost">Cost: @Model.Price$</p>
+            </div>
+        </figure>
+    </div>
+    <a class="goBack" href="@Url.Action("Index", "Product")">Back to Product List</a>
+    
+</div>

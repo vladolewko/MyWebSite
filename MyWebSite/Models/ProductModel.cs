@@ -13,6 +13,10 @@ public class ProductModel
     [Required(ErrorMessage = "Description is required")]
     [StringLength(50, MinimumLength = 6, ErrorMessage = "Short Description must be at least 6 characters long")]
     public string ShortDesc { get; set; }
+    
+    [Required(ErrorMessage = "Description is required")]
+    [StringLength(1000, MinimumLength = 50, ErrorMessage = "Description must be at least 50 characters long")]
+    public string FullDesc { get; set; }
 
     [Required(ErrorMessage = "Demention is required")]
     public string Demention { get; set; }
