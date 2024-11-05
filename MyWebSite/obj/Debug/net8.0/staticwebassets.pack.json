@@ -17,6 +17,46 @@
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/123.jpg",
+      "PackagePath": "staticwebassets/lib/img/123.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductA.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductA.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductB.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductB.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductC.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductC.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductD.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductD.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductE.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductE.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductF.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductF.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductG.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductG.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductH.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductH.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductI.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductI.jpg"
+    },
+    {
       "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductImg/ProductA.jpg",
       "PackagePath": "staticwebassets/lib/img/ProductImg/ProductA.jpg"
     },
@@ -73,12 +113,72 @@
       "PackagePath": "staticwebassets/lib/img/ProductImg/ProductN.jpg"
     },
     {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductJ.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductJ.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductK.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductK.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductL.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductL.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductM.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductM.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/ProductN.jpg",
+      "PackagePath": "staticwebassets/lib/img/ProductN.jpg"
+    },
+    {
       "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/bg-img.jpg",
       "PackagePath": "staticwebassets/lib/img/bg-img.jpg"
     },
     {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body 2/23847b19-1d5c-4249-9f22-8827c6017007.eps",
+      "PackagePath": "staticwebassets/lib/img/body 2/23847b19-1d5c-4249-9f22-8827c6017007.eps"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body 2/23847b19-1d5c-4249-9f22-8827c6017007.jpg",
+      "PackagePath": "staticwebassets/lib/img/body 2/23847b19-1d5c-4249-9f22-8827c6017007.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body.jpg",
+      "PackagePath": "staticwebassets/lib/img/body.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body/3280347.jpg",
+      "PackagePath": "staticwebassets/lib/img/body/3280347.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body/3280348.ai",
+      "PackagePath": "staticwebassets/lib/img/body/3280348.ai"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body/3280350.eps",
+      "PackagePath": "staticwebassets/lib/img/body/3280350.eps"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body/License free.txt",
+      "PackagePath": "staticwebassets/lib/img/body/License free.txt"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/body/License premium.txt",
+      "PackagePath": "staticwebassets/lib/img/body/License premium.txt"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/bodyno.jpg",
+      "PackagePath": "staticwebassets/lib/img/bodyno.jpg"
+    },
+    {
       "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/card-img.jpg",
       "PackagePath": "staticwebassets/lib/img/card-img.jpg"
+    },
+    {
+      "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/lw_3.pdf",
+      "PackagePath": "staticwebassets/lib/img/lw_3.pdf"
     },
     {
       "Id": "/Users/macbook/RiderProjects/MyWebSite/MyWebSite/wwwroot/lib/img/par-img.jpg",

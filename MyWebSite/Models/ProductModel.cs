@@ -1,13 +1,15 @@
 namespace MyWebSite.Models;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 public class ProductModel
 {
-    [Key] // Primary Key
+    [Key] 
     public int Id { get; set; }
 
     [Required(ErrorMessage = "ProductName is required")]
-    [StringLength(100, MinimumLength = 3, ErrorMessage = "Productname must be between 3 and 100 characters")]
+    [StringLength(100, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 100 characters")]
     public string ProductName { get; set; }
 
     [Required(ErrorMessage = "Description is required")]
@@ -35,4 +37,5 @@ public class ProductModel
         get { return $"lib/img/ProductImg/{ProductName}.jpg"; }
         
     }
+  
 }

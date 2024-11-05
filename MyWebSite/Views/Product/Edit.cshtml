@@ -39,63 +39,130 @@
     @*         </tr> *@
     @*     </table> *@
     @* </div> *@
+    @* <div class="tableForProducts"> *@
+    @*     <table class="productstable"> *@
+    @*         <tr class="thead"> *@
+    @*             <td>Id</td> *@
+    @*             <td>Name</td> *@
+    @*             <td>Short description</td> *@
+    @*             <td>Full description</td> *@
+    @*             <td>Demention</td> *@
+    @*             <td>Weight</td> *@
+    @*             <td>isFavorite</td> *@
+    @*             <td>Price</td> *@
+    @*             <td>Actions</td> *@
+    @*         </tr> *@
+    @*         @foreach (var product in Model) *@
+    @*         { *@
+    @*         <tr> *@
+    @*             <form asp-action="Edit" method="post"> *@
+    @*                 <td> *@
+    @*                     @product.Id *@
+    @*                     <input type="hidden" name="Id" value="@product.Id" /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <input type="text" name="ProductName" value="@product.ProductName" class="form-control" /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <input type="text" name="ShortDesc" value="@product.ShortDesc" class="form-control" /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <input type="text" name="FullDesc" value="@product.FullDesc" class="form-control" /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <input type="text" name="Demention" value="@product.Demention" class="form-control" /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <input type="number" name="Weight" value="@product.Weight" class="form-control" /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <input type="checkbox" name="IsFavorite" value="true" @(product.IsFavorite ? "checked" : "") /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <input type="number" name="Price" value="@product.Price" step="0.01" class="form-control" /> *@
+    @*                 </td> *@
+    @*                 <td> *@
+    @*                     <button type="submit" class="btn btn-primary">Save</button> *@
+    @*                     <form asp-action="Delete" method="post"> *@
+    @*                         <input type="hidden" name="id" value="@product.Id" /> *@
+    @*                         <button type="submit" class="btn btn-danger">Delete</button> *@
+    @*                     </form> *@
+    @*                 </td> *@
+    @*             </form> *@
+    @*         </tr> *@
+    @*         } *@
+    @*         <tr> *@
+    @*             <td></td> *@
+    @*             <td class="linkForCreate" colspan="7"><a asp-controller="Product" asp-action="Create">Create</a></td> *@
+    @*         </tr> *@
+    @*     </table> *@
+    @* </div> *@
     <div class="tableForProducts">
-        <table class="productstable">
-            <tr class="thead">
-                <td>Id</td>
-                <td>Name</td>
-                <td>Short description</td>
-                <td>Full description</td>
-                <td>Demention</td>
-                <td>Weight</td>
-                <td>isFavorite</td>
-                <td>Price</td>
-                <td>Actions</td>
-            </tr>
-            @foreach (var product in Model)
-            {
-            <tr>
-                <form asp-action="Edit" method="post">
+        <form asp-action="SaveAll" method="post">
+            <table class="productstable">
+                <tr class="thead">
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Short description</td>
+                    <td>Full description</td>
+                    <td>Demention</td>
+                    <td>Weight</td>
+                    <td>isFavorite</td>
+                    <td>Price</td>
+                    <td>Delete</td>
+                </tr>
+                @{
+                    var products = Model.ToList(); 
+                }
+                @for (int i = 0; i < products.Count; i++)
+                {
+                    var product = products[i];
+                <tr>
                     <td>
                         @product.Id
-                        <input type="hidden" name="Id" value="@product.Id" />
+                        <input id type="hidden" name="Products[@i].Id" value="@product.Id" />
                     </td>
                     <td>
-                        <input type="text" name="ProductName" value="@product.ProductName" class="form-control" />
+                        <input type="text" name="Products[@i].ProductName" value="@product.ProductName" class="form-control"/>
                     </td>
                     <td>
-                        <input type="text" name="ShortDesc" value="@product.ShortDesc" class="form-control" />
+                        <input type="text" name="Products[@i].ShortDesc" value="@product.ShortDesc" class="form-control" />
                     </td>
                     <td>
-                        <input type="text" name="FullDesc" value="@product.FullDesc" class="form-control" />
+                        <textarea name="Products[@i].FullDesc" class="form-control">@product.FullDesc</textarea>                    </td>
+                    <td>
+                        <input type="text" name="Products[@i].Demention" value="@product.Demention" class="form-control" />
                     </td>
                     <td>
-                        <input type="text" name="Demention" value="@product.Demention" class="form-control" />
+                        <input type="number" name="Products[@i].Weight" value="@product.Weight" class="form-control" />
                     </td>
                     <td>
-                        <input type="number" name="Weight" value="@product.Weight" class="form-control" />
+                        <input type="checkbox" name="Products[@i].IsFavorite" value="true" @(product.IsFavorite ? "checked" : "") />
                     </td>
                     <td>
-                        <input type="checkbox" name="IsFavorite" value="true" @(product.IsFavorite ? "checked" : "") />
+                        <input type="number" name="Products[@i].Price" value="@product.Price" step="0.01" class="form-control" />
                     </td>
-                    <td>
-                        <input type="number" name="Price" value="@product.Price" step="0.01" class="form-control" />
-                    </td>
-                    <td>
-                        <button type="submit" class="btn btn-primary">Save</button>
+                    <td class="deleteProduct">
                         <form asp-action="Delete" method="post">
                             <input type="hidden" name="id" value="@product.Id" />
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
                     </td>
-                </form>
-            </tr>
-            }
-            <tr>
-                <td></td>
-                <td class="linkForCreate" colspan="7"><a asp-controller="Product" asp-action="Create">Create</a></td>
-            </tr>
-        </table>
+                </tr>
+                }
+                <tr>
+                    <td colspan="9" class="linkForCreate">
+                        <button type="submit" class="btn btn-primary">Save All Changes</button>
+                    </td>
+                </tr>
+                <tr class="linkForCreate">
+                    <td colspan="9">
+                        <a asp-controller="Product" asp-action="Create">Create New Product</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
+
 
 </div>

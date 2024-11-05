@@ -123,3 +123,14 @@
 /Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/MySqlConnector.dll
 /Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/macbook/RiderProjects/MyWebSite/MyWebSite/obj/Debug/net8.0/MyWebSite.sourcelink.json
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/win-x64/src/dart.exe
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/win-x64/src/sass.snapshot
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/linux-x64/src/dart
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/linux-x64/src/sass.snapshot
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/linux-arm64/src/dart
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/linux-arm64/src/sass.snapshot
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/osx-x64/src/dart
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/osx-x64/src/sass.snapshot
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/osx-arm64/src/dart
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/runtimes/osx-arm64/src/sass.snapshot
+/Users/macbook/RiderProjects/MyWebSite/MyWebSite/bin/Debug/net8.0/AspNetCore.SassCompiler.dll

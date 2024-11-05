@@ -1,3 +1,7 @@
+@{
+    ViewData["Title"] = "Products Page";
+}
+
 @model IEnumerable<ProductModel>
 
 <div class="wrapper">
@@ -30,7 +34,8 @@
         @foreach (var product in Model)
         {
         <figure>
-            <img src="@product.Image" alt="product card">
+            <img src="@Url.Content(product.Image)" alt="Product Image" />
+
             <div class="figure-card">
                 <h2>@product.ProductName</h2>
                 <p>@product.ShortDesc</p>

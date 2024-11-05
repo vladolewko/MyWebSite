@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNetCore.SassCompiler": {
+              "target": "Package",
+              "version": "[1.79.3, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.5.1, )"

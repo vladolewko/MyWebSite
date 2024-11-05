@@ -4,9 +4,16 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - MyWebSite</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/MyWebSite.styles.css" asp-append-version="true"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Kalam:wght@300;400;700&family=Pacifico&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -26,7 +33,7 @@
                     <li class="nav-item">
                         <a class="" asp-area="" asp-controller="User" asp-action="Index">User</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item forsub">
                         <a class="" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
                         <ul class="sub-menu">
                             <li><a asp-controller="Product" asp-action="Edit">Edit</a></li>
@@ -72,5 +79,6 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

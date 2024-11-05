@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class UserModel
 {
-    [Key] // Primary Key
+    [Key] 
     public int Id { get; set; }
 
     [Required(ErrorMessage = "Username is required")]
@@ -20,5 +20,5 @@ public class UserModel
     public string Email { get; set; }
 
     [Required]
-    public bool IsAdmin { get; set; } = false; // Example additional property
+    public bool IsAdmin { get; set; }
 }

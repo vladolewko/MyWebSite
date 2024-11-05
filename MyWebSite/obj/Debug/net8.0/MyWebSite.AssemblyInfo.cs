@@ -10,10 +10,13 @@
 using System;
 using System.Reflection;
 
+[assembly: AspNetCore.SassCompiler.SassCompilerAttribute("/Users/macbook/.nuget/packages/aspnetcore.sasscompiler/1.79.3/build/../runtimes/o" +
+    "sx-arm64/src/dart", "/Users/macbook/.nuget/packages/aspnetcore.sasscompiler/1.79.3/build/../runtimes/o" +
+    "sx-arm64/src/sass.snapshot")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyWebSite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce6e82e893a77f8bc1674dacd3ae6b75805f6914")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+feb084b5aeeb687dbf72b4a6e4ae453c09efde8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyWebSite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyWebSite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
